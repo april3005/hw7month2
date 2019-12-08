@@ -17,7 +17,6 @@ public class Main {
         A.add(sc.nextLine());
         A.add(sc.nextLine());
         A.add(sc.nextLine());
-
         System.out.println(A);
 
         B.add(sc.nextLine());
@@ -25,21 +24,10 @@ public class Main {
         B.add(sc.nextLine());
         B.add(sc.nextLine());
         B.add(sc.nextLine());
-
         System.out.println(B);
 
-        C.add(A.get(0));
-        C.add(B.get(4));
-        C.add(A.get(1));
-        C.add(B.get(3));
-        C.add(A.get(2));
-        C.add(B.get(2));
-        C.add(A.get(3));
-        C.add(B.get(1));
-        C.add(A.get(4));
-        C.add(B.get(0));
-
-
+        C.addAll(A);
+        C.addAll(B);
         System.out.println(C);
 
 Collections.sort(C, new Comparator<String>() {
